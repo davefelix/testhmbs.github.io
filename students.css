@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.stu-1 {
+    width: 100%;
+    margin: 0 auto 2em auto;
+
+}
+
+.stu-1-1 {
+    width: 100%;
+    text-align: center;
+    background-color: green;
+    padding: 2.6em ;
+    margin: 0;
+    color:  white;
+}
+
+.stu-2 {
+    width: 80%;
+    margin: auto;
+    background-color: rgb(250, 255, 251);
+    border-radius: 5px;
+    padding-top: 2em;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.44);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.44);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.44);
+}
+.stu-2-1 {
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+.stu-2-2 {
+    width: 90%;
+    margin: 1em auto 2em auto;
+    padding: 1em;
+    background-color: rgb(236, 255, 234);
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+}
+.stu-2-2 p {
+    margin: 1em;
+    line-height: 1.5em;
+}
+
+.stu-2-3 {
+    width: 90%;
+    margin: 1em auto 1em auto;
+    padding: 2em;
+    background-color: rgb(236, 255, 234);
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+}
+.stu-2-3 li {
+    margin: 0.6em;
+}
+
+.stu-2-4 {
+    width: 95%;
+    margin: 1em auto 2em auto;
+    padding: 2em ;
+    text-align: center;
+
+}

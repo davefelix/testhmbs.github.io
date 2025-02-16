@@ -145,6 +145,7 @@ body {
     width: 100px;
     color: rgb(0, 219, 0);
     border: 2px solid rgb(0, 219, 0);
+    margin: auto;
 }
 .welmsg h1, .welmsg h3 {
     margin: 0;
@@ -224,11 +225,13 @@ body {
 .discover .dshr {
     color: rgb(0, 199, 0);
     border: 2px solid rgb(0, 199, 0);
+    
 }
 .dicontainer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-top: 1em;
 }
 .dfirst, .dsecond {
     width: 48%;
@@ -246,7 +249,9 @@ body {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-top: 3.5em;
+    margin: 3.5em auto 0 auto;
+    width: 95%;
+    
 }
 .sub-container {
     width: 24%;
@@ -273,6 +278,8 @@ body {
 .container-2 {
     display: flex;
     flex-wrap: wrap;
+    width: 95%;
+    margin: auto;
 
 }
 .subcont {
@@ -315,6 +322,7 @@ body {
     width: 40%;
     border: 2px solid green;
     color: green;
+    margin: auto;
 }
 .news-container {
     display: flex;
@@ -417,45 +425,76 @@ footer {
 }
 
 /* achievement part */
-
-.achievement {
-    width: 96%;
-    margin: auto;
+.ach-cont {
+    padding: 0 0 1em 0;
 }
-.ach-header {
+.ach-cont h3 {
+    background-color: green;
+    color: white;
+    padding: 0.6em;
     text-align: center;
+    border-radius: 6px;
 }
 .ach {
-    width: 20%;
-    background-color: #01b400;
-    text-align: center;
-    box-shadow: rgba(0, 0, 0, 0.5) 1px 0 6px;
+    background-color: rgb(255, 255, 255);
+    margin: 1.5em auto;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    max-width: 1000px;
+    border-radius: 5px;
 }
-.ach-cont {
-    display: flex;
-    justify-content: space-around;
+.ach h4 {
+    margin: 10px 0;
+    text-align:center;
 }
 
 /* table part */
+.st-cont {
+    padding: 1em 0;
 
-.the-table table {
-    width: 95%;
-    text-align: center;
-    vertical-align:middle;
-    border-collapse: collapse;
-    margin: auto;
-    background-color: rgba(56, 56, 56, 0.849);
-    color: rgb(255, 255, 255);
 }
-.the-table h3 {
+.st-cont h3 {
+    margin: 1em ;
     text-align: center;
+    padding: 0.6em ;
+    background-color: green;
+    color: white;
+    border-radius: 6px;
 }
-.the-table th, .the-table td {
+.stsc-cont {
+    max-width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.stsc {
+    margin: 1em 0;
+    width: 23%;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
     padding: 10px;
+    background-color: rgb(255, 255, 255);
+    transition: transform 0.3s ease-in-out;
 }
-.the-table tr:nth-child(odd) {
-    background-color: rgba(58, 58, 58, 0.849);
-  }
+.stsc:hover {
+    transform: scale(1.05);
+}
+.stsc img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid green;
+    object-fit: cover;
+}
+.stsc h4 {
+    margin: 1em 0 0.7em;
+}
+.stsc .p-col {
+    color: rgb(73, 73, 73);
+    margin-top: 0.4em;
+}
 
 
 @media screen and (max-width: 830px ) {
@@ -478,7 +517,7 @@ footer {
         width: 47%;
     }
     .news-container .box {
-        width: 90%;
+        width: 80%;
     }
     .dicontainer {
         display: block;
@@ -505,21 +544,29 @@ footer {
     .footer-2-3 {
         padding-left: 30%;
     }
-    .ach {
-        width: 45%;
-        margin: 10px;
-    }
-    .ach-cont {
-        flex-wrap: wrap;
-    }
-    
+
     
 }
+
 @media screen and (min-width: 830px) {
     .menu-button, .close-button, .side-bar-container {
         display: none !important;
     }
 }
+
+@media screen and (max-width:920px) {
+    
+    .stsc-cont {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 80%;
+        margin: auto;
+    }
+    .stsc {
+        width: 40%;
+    }
+}
+
 @media screen and (max-width: 667px) {
     .image-container {
         flex-direction: column;
@@ -527,14 +574,14 @@ footer {
     }
     .sub-container {
         margin: 5px auto 5px auto;
-        width: 93%;
+        width: 80%;
     }
     .news-container {
         flex-direction: column;
 
     }
     .news-container .box {
-        width: 90%;
+        width: 85%;
         margin: 0 auto 5px auto;
     }
     .container-2 {
@@ -549,11 +596,22 @@ footer {
         padding-left: 0;
         
     }
-    .ach {
-        width: 80%;
-        margin: 10px;
+    .stsc-cont {
+        flex-direction: column;
+        align-items: center;
     }
-    .ach-cont {
-        flex-wrap: wrap;
+    .stsc {
+        width: 60%;
+    }
+    .discover {
+        width: 80%;
+        margin: auto;
+    }
+
+
+}
+@media screen and (max-width: 520px) {
+    .stsc {
+        width: 80%;
     }
 }

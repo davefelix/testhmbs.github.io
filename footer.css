@@ -1,0 +1,112 @@
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+footer {
+    background-color: rgb(37, 37, 37);
+    color: white;
+    padding: 5em;
+    padding-bottom: 1em;
+}
+.fot-cont {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+
+}
+.fot-1 {
+    width: 80%;
+    margin: 0 auto 1em auto;
+}
+.fot-2, .fot-3, .fot-4 {
+    width: 40%;
+}
+.fot-1-1 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1em;
+}
+.fot-1-2 {
+    padding: 0.2em;
+    text-align: justify;
+}
+.fot-1-2 p {
+    font-size: 0.9em;
+}
+.fot-2, .fot-3, .fot-4 {
+    text-align: center;
+    text-wrap: nowrap;
+}
+.fot-2 p, .fot-3 p, .fot-4 p {
+    font-size: 0.8em;
+    margin: 0.5em;
+}
+.fot-5 {
+    margin: 2em auto 1em auto;
+    width: 30%;
+    text-align: center;
+}
+.fot-5 a {
+    margin: 0.5em;
+}
+.fot-5 h4 {
+    margin: 1em;
+}
+.fot a {
+    color: white;
+    text-decoration: none;
+
+}
+.fot a:hover {
+    color: rgb(87, 255, 87);
+    font-size: 1.059em;
+    transition: font-size 0.3s;
+}
+.fot2:hover svg {
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
+.copyright {
+    font-size: 0.8em;
+    text-align: center;
+}
+
+
+
+@media screen and (max-width: 806px) {
+    .fot-cont {
+        flex-direction: column;
+        align-items: center;
+    }
+    .fot {
+        margin-bottom: 1em;
+    }
+    .fot-1 {
+        width: 90%;
+    }
+    .fot-2, .fot-3, .fot-4  {
+        padding-left: 0;
+    }
+    .fot-2, .fot-3, .fot-4  {
+        text-align: center;
+    }
+    .fot-5 {
+        width: 100%;
+    }
+    .fot-2, .fot-3, .fot-4 {
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width: 700px) {
+    .fot-1-1 h3 {
+        display: none;
+    }
+}
